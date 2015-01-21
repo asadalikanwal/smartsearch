@@ -1,0 +1,16 @@
+{
+  "name": "Search",
+  "version": "1.0.0",
+  "description": "To search globally",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AAK",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-watch": "^3.0.0"
+  }
+}
