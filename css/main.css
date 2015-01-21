@@ -1,10 +1,10 @@
-.search21 {
+.search {
   border: 2px solid red; }
-  .search21__element {
+  .search__element {
     font-align: left; }
-    .search21__element--red {
+    .search__element--red {
       color: red; }
-    .search21__element--blue {
+    .search__element--blue {
       color: oranfe; }
 
 /*# sourceMappingURL=main.css.map */

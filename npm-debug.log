@@ -4,8 +4,8 @@
 1 verbose cli   'install',
 1 verbose cli   '--global',
 1 verbose cli   'gulp' ]
-2 info using npm@1.4.28
-3 info using node@v0.10.33
+2 info using npm@1.4.21
+3 info using node@v0.10.30
 4 verbose cache add [ 'gulp', null ]
 5 verbose cache add name=undefined spec="gulp" args=["gulp",null]
 6 verbose parsed url { protocol: null,
@@ -31,27 +31,27 @@
 15 silly addNameRange { name: 'gulp', range: '*', hasData: false }
 16 verbose request where is /gulp
 17 verbose request registry https://registry.npmjs.org/
-18 verbose request id ff2a1e693f5a1344
+18 verbose request id e30ce3f5997071b6
 19 verbose url raw /gulp
 20 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
 21 verbose url resolved https://registry.npmjs.org/gulp
 22 verbose request where is https://registry.npmjs.org/gulp
-23 info trying registry request attempt 1 at 17:22:10
+23 info trying registry request attempt 1 at 23:26:13
 24 verbose etag "1XDOH4N1WE015AS5ET10A0WOM"
 25 http GET https://registry.npmjs.org/gulp
 26 http 304 https://registry.npmjs.org/gulp
 27 silly registry.get cb [ 304,
-27 silly registry.get   { date: 'Wed, 21 Jan 2015 13:22:11 GMT',
+27 silly registry.get   { date: 'Wed, 21 Jan 2015 19:26:29 GMT',
 27 silly registry.get     server: 'Apache',
 27 silly registry.get     via: '1.1 varnish',
-27 silly registry.get     'last-modified': 'Wed, 21 Jan 2015 13:22:11 GMT',
+27 silly registry.get     'last-modified': 'Wed, 21 Jan 2015 19:26:30 GMT',
 27 silly registry.get     'cache-control': 'max-age=60',
 27 silly registry.get     etag: '"1XDOH4N1WE015AS5ET10A0WOM"',
-27 silly registry.get     age: '22',
-27 silly registry.get     'x-served-by': 'cache-lhr6333-LHR',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-sn89-SIN',
 27 silly registry.get     'x-cache': 'HIT',
 27 silly registry.get     'x-cache-hits': '1',
-27 silly registry.get     'x-timer': 'S1421846531.818194,VS0,VE1',
+27 silly registry.get     'x-timer': 'S1421868389.387565,VS0,VE800',
 27 silly registry.get     vary: 'Accept',
 27 silly registry.get     'content-length': '0',
 27 silly registry.get     'keep-alive': 'timeout=10, max=50',
@@ -209,14 +209,14 @@
 49 error   fstream_class: 'DirWriter',
 49 error   fstream_stack:
 49 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
-49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
 49 error      'Object.oncomplete (fs.js:107:15)' ] }
 50 error Please try running this command again as root/Administrator.
-51 error System Linux 3.10.0-123.6.3.el7.x86_64
+51 error System Linux 3.10.0-123.13.2.el7.x86_64
 52 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--global" "gulp"
-53 error cwd /home/asad/checkouts/search
-54 error node -v v0.10.33
-55 error npm -v 1.4.28
+53 error cwd /home/asad/checkouts/smartsearch
+54 error node -v v0.10.30
+55 error npm -v 1.4.21
 56 error path /usr/local/lib/node_modules/gulp
 57 error fstream_path /usr/local/lib/node_modules/gulp
 58 error fstream_type Directory
@@ -225,6 +225,6 @@
 61 error errno 3
 62 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/gulp'
 63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
-63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
 63 error fstream_stack Object.oncomplete (fs.js:107:15)
 64 verbose exit [ 3, true ]
