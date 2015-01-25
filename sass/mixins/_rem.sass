@@ -1,0 +1,40 @@
+// REM MIXIN
+// Baseline, measured in pixels
+// The value should be the same as the font-size value for the html element
+
+// .foo
+//     +rem('border', 1px, solid red)
+//     +rem('margin', 1px 20px 2px 5px)
+//     +rem('font-size', 10px)
+
+// ...converts to...
+
+// .foo {
+//     border: 0.0625rem solid red;
+//     border: 1px solid red;
+//     margin: 0.0625rem 1.25rem 0.125rem 0.3125rem;
+//     margin: 1px 20px 2px 5px;
+//     font-size: 0.625rem;
+//     font-size: 10px;
+// }
+
+@mixin rem($property, $px-values, $extra: null)
+    // Convert the baseline into rems
+    // Relies on the $base-font-size global (see typography.sass)
+    $baseline-rem: $base-font-size / 1rem
+    // Print the first line in pixel values
+    #{$property}: $px-values #{$extra}
+    // If there is only one (numeric) value, return the property/value line for it.
+    @if type-of($px-values) == "number"
+        #{$property}: $px-values / $baseline-rem #{$extra}
+    @else
+        // Create an empty list that we can dump values into
+        $rem-values: unquote("")
+        @each $value in $px-values
+        // If the value is zero, return 0
+        @if $value == 0 or $value == "auto"
+            $rem-values: append($rem-values, $value)
+        @else
+            $rem-values: append($rem-values, $value / $baseline-rem)
+        // Return the property and its list of converted values
+        #{$property}: $rem-values #{$extra}
