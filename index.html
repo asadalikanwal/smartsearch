@@ -1,20 +1,23 @@
-<head ng-app="app">
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" />
-<title>External Browser</title>
-<link rel="shortcut icon" href="/favicon.ico" />
-
-<link rel="stylesheet" href="css/sw-ltr.css" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<script src="node_modules/angular/angular.min.js"></script>
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" />
+	<title>External Browser</title>
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="stylesheet" href="css/sw-ltr.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
-<body>
-    <div class="url">
-        <input type="text" placeholder="Type you URL" class="url__input" />
-    </div>
-<body>
+<body ng-controller="search">
+	<div class="url">
+		<input type="text" placeholder="Type you URL" class="url__input" />
+	</div>
+	<div ui-view>
+	
+	</div>
+</body>
 </html>
